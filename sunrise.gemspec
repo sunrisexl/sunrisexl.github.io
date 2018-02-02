@@ -1,10 +1,10 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-prologue"
+  spec.name          = "sunrise"
   spec.version       = "0.3.1"
-  spec.authors       = ["HTML5 UP", "Chris Bobbe"]
-  spec.email         = ["csbobbe@gmail.com"]
+  spec.authors       = ["HTML5 UP", "SunRise"]
+  spec.email         = ["sxl961105@gmail.com"]
 
   spec.summary       = %q{A Jekyll version of the Prologue theme by HTML5 UP.}
   spec.description   = "A Jekyll version of the Prologue theme by HTML5 UP. Demo: https://chrisbobbe.github.io/jekyll-theme-prologue/"
