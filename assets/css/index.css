@@ -10,7 +10,7 @@ body,div,p,h1{
 img{
 	border: 0;
 	display: block;
-	max-width: 100%;
+	/*max-width: 100%;*/
 	vertical-align: middle;
 }
 
