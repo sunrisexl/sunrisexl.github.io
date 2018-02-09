@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post1
 title: 'Hello Jekyll'
 date: 2017-04-18
 author: Jekyll
