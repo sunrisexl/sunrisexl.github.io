@@ -19,7 +19,7 @@
             <span class="icon {{ _icon }}">{{- _title -}}</span>
           </a></li>
         {%- elsif _page.url -%}
-          <li><a href="H2O/index.html" id="{{- _slug -}}-link">
+          <li><a href="{{- _page.url | absolute_url -}}" id="{{- _slug -}}-link">
             <span class="icon {{ _icon }}">{{- _title -}}</span>
           </a></li>
         {%- else -%}
