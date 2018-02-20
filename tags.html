@@ -1,13 +1,12 @@
 ---
-title: 分类
-layout: default1
-order: 4
+title: Tags
+layout: default
 ---
 
-{% include header1.html %}
+{% include header.html %}
 
 <div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
-    <h2>TAGS</h2>
+    <h2>标签</h2>
 </div>
 
 <main class="tags-content">
@@ -27,10 +26,10 @@ order: 4
             <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
-        
-        </div>
         {% endfor%}
+        </div>
+        
     </ul>
 </main>
     
-{% include footer1.html %}
+{% include footer.html %}

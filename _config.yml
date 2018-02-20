@@ -1,45 +1,29 @@
-title: Sunrise
-subtitle: blog
-description: >- # this means to ignore newlines until "baseurl:"
-  This is the demo site for a Jekyll theme version of
-  HTML5 UP's sleek, responsive site template Prologue.
-keyword: 'sunrise, sunrise blog, 设计'
-author: sunirse
-email: 1452474095@qq.com
-bio: '热爱设计'
-avatar: assets/images/avatar.jpg
+# Site settings 配置站点
+title: 'sunrise blog'
+description: '分享'
+keyword: 'sunrise, blog, '
+url: 'http://liaokeyu.com' # your host
 
-# You'll want to customize url and baseurl for your own site:
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-
-# Social settings
-facebook_url:
-github_url:
-googleplus_url:
-instagram_url:
-linkedin_url:
-pinterest_url:
-slack_url:
-twitter_url:
-
-# Google Analytics Tracking ID goes here:
-google_analytics:
-
-# The following settings are NECESSARY for the Prologue theme to run:
-# theme: jekyll-theme-prologue
-collections: [sections]
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
 
 # Navigation links
 nav:
-  home: '/'
-  tags: '/tags.html'
+  主页: '/'
+  图片: '/pictures/SunnyAndRain.html'
+  标签: '/tags.html'
 
 # Footer
 footer:
   since: 2018
 
- # Search
+# Author 配置博主信息
+author: 'sunrise'
+nickname: 'sunrise'
+bio: '摄影 技术 编程'
+avatar: '/assets/img/profile.jpg'
+
+# Search
 search: true
 
 # Night mode
@@ -75,8 +59,9 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   email: 'mailto:1452474095@qq.com'
-  weibo: '//weibo.com/'
-  instagram: '//www.instagram.com/'
+  weibo: '//weibo.com/5648761607'
+  # juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
+  # instagram: '//www.instagram.com/steveliaocn'
   github: '//github.com/sunrisexl'
 
 # Tags 设置标签
@@ -102,4 +87,4 @@ RSS: false
 permalink: /:year/:month/:day/:title.html
 
 # Plugins
-# plugins: [jekyll-paginate]
+plugins: [jekyll-paginate]

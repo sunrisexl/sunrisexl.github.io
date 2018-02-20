@@ -1,13 +1,15 @@
-<!-- Footer -->
-<div id="footer">
-  
-  <!-- Copyright -->
-  <ul class="copyright">
-    {% if site.title or site.author %}
-      <li>&copy; {{- site.title | default: site.author -}}. All rights reserved.</li>
-    {% endif %}
-    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
-  </ul>
-  
-</div>
+{% if site.b2t %}
+  {% include b2t.html %}
+{% endif %}
+
+<footer class="g-footer">
+  <section>{{ site.title }} ©
+  {% assign current = "now" | date: "%Y" | plus: 0%}
+  {% unless site.footer.since and site.footer.since == current %}
+    {{ site.footer.since }}
+    -
+  {% endunless %}
+  {{ current }}
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
+</footer>

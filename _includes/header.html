@@ -1,15 +1,13 @@
-{%- comment -%}
-  Include vars:
-  scrolly_nav
-{%- endcomment -%}
-
-<!-- Header -->
-<div id="header">
-  <div class="top">
-    {%- include logo.html -%}
-    {%- include nav.html section_items=include.scrolly_nav -%}
-  </div>
-  <div class="bottom">
-    {%- include social_icons.html -%}
-  </div>
-</div>
+<header class="g-header">
+    <div class="g-logo">
+      <a href="{{ "/" | relative_url }}"></a>
+    </div>
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav">
+        <ul>
+            {% for i in site.nav %}
+            <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

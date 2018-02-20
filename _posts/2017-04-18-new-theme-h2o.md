@@ -1,5 +1,5 @@
 ---
-layout: post1
+layout: post
 title: 'H2O theme for Jekyll'
 subtitle: '或许是最漂亮的Jekyll主题'
 date: 2017-04-18
@@ -68,16 +68,15 @@ tags: jekyll 前端开发 设计
 
 遵循 [HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-pre-element) 标准，Prism 使用语义化的 `<pre>` 元素和 `<code>` 元素来标记代码区块：
 
-```
+
 <pre><code class="language-css">p { color: red }</code></pre>
-```
+
 
 在Markdown中你可以这样写：
 
-```
- ```css
-	p { color: red }
- ```
+
+```css
+p { color: red }
 ```
 
 支持语言：
