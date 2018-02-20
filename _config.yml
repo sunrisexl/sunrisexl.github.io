@@ -10,7 +10,7 @@ baseurl: ''
 # Navigation links
 nav:
   主页: '/'
-  图片: '/pictures/SunnyAndRain.html'
+  图片: '/pictures/index-color.html'
   标签: '/tags.html'
 
 # Footer
