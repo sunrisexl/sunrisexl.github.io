@@ -126,7 +126,7 @@ button:focus { outline: none; }
 .cd-slider-nav a,
 .navbar-nav .nav-link {
 	background-color: transparent;
-	color: black;
+	color: grey;
     display: table-cell;
     font-weight: 400;
     font-size: 1em;
