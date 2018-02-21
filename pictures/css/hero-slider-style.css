@@ -43,7 +43,7 @@ Main Components
 }
 @media only screen and (min-width: 768px) {
   .cd-header {
-    height: 70px;
+    height: 60px;
     background-color: transparent;
   }
 }
@@ -499,7 +499,7 @@ Slider navigation
 }
 @media only screen and (min-width: 768px) {
   .cd-slider-nav {
-    height: 80px;
+    height: 60px;
   }
   .cd-slider-nav .cd-marker,
   .cd-slider-nav li {
