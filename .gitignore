@@ -4,3 +4,6 @@
 node_modules
 
 _site
+assets/img/desktop.ini
+dev/desktop.ini
+pictures/img/desktop.ini
