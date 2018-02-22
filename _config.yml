@@ -11,6 +11,7 @@ baseurl: ''
 nav:
   主页: '/'
   图片: '/pictures/index-color.html'
+  分类: '/cates.html'
   标签: '/tags.html'
 
 # Footer

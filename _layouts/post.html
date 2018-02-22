@@ -11,6 +11,13 @@
   <header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme-color }}">
     <div class="post-wrapper">
       <div class="post-tags">
+			分类：
+		{% if page.categories.size > 0 %}
+          {% for cate in page.categories  %}
+            <a href="{{ "cates#" | append: cate | absolute_url }}" class="post-tag">{{ cate }}</a>
+          {% endfor %}
+        {% endif %}
+			标签:
         {% if page.tags.size > 0 %}
           {% for tag in page.tags  %}
             <a href="{{ "tags#" | append: tag | absolute_url }}" class="post-tag">{{ tag }}</a>
