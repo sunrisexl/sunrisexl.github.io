@@ -64,20 +64,18 @@ tags: bigdata linux
         
             (此时可能无法连接外网，暂不配置)
             
-            yum install ntp
-            
-            systemctl is-enabled ntpd
-            
-            systemctl enabled ntpd
-            
-            systemctl start ntpd
+                yum install ntp
+                
+                systemctl is-enabled ntpd
+                
+                systemctl enabled ntpd
+                
+                systemctl start ntpd
             
         * 检查DNS和NSCD
             配置全域名，所以需要检查DNS。为了减轻DNS的负担, 建议在节点里用 Name Service Caching Daemon (NSCD)
             
             vi /etc/hosts
-            
-                添加以下内容：
                 
                 192.168.203.111 SY001 SY001.hadoop
                 
