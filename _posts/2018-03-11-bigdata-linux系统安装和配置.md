@@ -44,9 +44,11 @@ tags: bigdata linux
 		    
         * 设置主机名 （配置文件） /etc/hosts
         
+            '''bash
             vi /etc/hosts
             
             192.168.203.111 SY001 SY001.hadoop
+            '''
 
         * 创建ambari系统用户和用户组（可选，此处直接用root用户）
             
