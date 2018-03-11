@@ -15,9 +15,7 @@ tags: bigdata linux
     * 一共3台虚拟机：安装JDK、配置主机名、关闭防火墙
     
             192.168.157.11 SY001.hadoop
-    
     	    192.168.157.12 SY002.hadoop
-    	    
     	    192.168.157.13 SY003.hadoop
 	    
     
@@ -36,19 +34,20 @@ tags: bigdata linux
         * 重启后完成配置
     * linux配置
         * 关闭防火墙
-            查看防火墙的状态：systemctl status firewalld.service
+            查看防火墙的状态：
+            systemctl status firewalld.service
 
-		    关闭防火墙：      systemctl stop firewalld.service
+		    关闭防火墙：      
+		    systemctl stop firewalld.service
 		    
-		    禁用防火墙（永久）systemctl disable firewalld.service
+		    禁用防火墙（永久）
+		    systemctl disable firewalld.service
 		    
         * 设置主机名 （配置文件） /etc/hosts
         
-            '''bash
-            vi /etc/hosts
-            
-            192.168.203.111 SY001 SY001.hadoop
-            '''
+                vi /etc/hosts
+                
+                192.168.203.111 SY001 SY001.hadoop
 
         * 创建ambari系统用户和用户组（可选，此处直接用root用户）
             
@@ -57,9 +56,7 @@ tags: bigdata linux
             主节点执行以下命令：
             
                 ssh-keygen -t rsa
-                
                 ssh-copy-id -i .ssh/id_rsa.pub root@SY002
-                
                 ssh-copy-id -i .ssh/id_rsa.pub root@SY003
             
         * 开启NTP服务（时间校准服务）
@@ -67,31 +64,25 @@ tags: bigdata linux
             (此时可能无法连接外网，暂不配置)
             
                 yum install ntp
-                
                 systemctl is-enabled ntpd
-                
                 systemctl enabled ntpd
-                
                 systemctl start ntpd
             
         * 检查DNS和NSCD
             配置全域名，所以需要检查DNS。为了减轻DNS的负担, 建议在节点里用 Name Service Caching Daemon (NSCD)
             
-            vi /etc/hosts
+                vi /etc/hosts
                 
                 192.168.203.111 SY001 SY001.hadoop
-                
                 192.168.203.112 SY002 SY002.hadoop
-                
                 192.168.203.113 SY003 SY003.hadoop
                 
                 
             每台节点里配置FQDN，如下以主节点为例:
             
-            vi /etc/sysconfig/network
+                vi /etc/sysconfig/network
             
                 NETWORKING=yes
-                
                 HOSTNAME=SY-001.hadoop
                 
 
