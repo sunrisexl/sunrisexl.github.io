@@ -3,7 +3,7 @@ layout: post
 title: '二.linux系统安装和配置'
 subtitle: '安装配置redhat'
 date: 2018-03-11
-categories: bigdata
+categories: 大数据
 cover: 'http://githubpics.oss-cn-beijing.aliyuncs.com/bigdata/red-hat-1.jpg'
 tags: bigdata linux 
 ---
@@ -14,11 +14,11 @@ tags: bigdata linux
     * 网卡：仅主机模式
     * 一共3台虚拟机：安装JDK、配置主机名、关闭防火墙
     
-        192.168.157.11 SY001.hadoop
-
-	    192.168.157.12 SY002.hadoop
-	    
-	    192.168.157.13 SY003.hadoop
+            192.168.157.11 SY001.hadoop
+    
+    	    192.168.157.12 SY002.hadoop
+    	    
+    	    192.168.157.13 SY003.hadoop
 	    
     
  2. 详细步骤
@@ -91,6 +91,7 @@ tags: bigdata linux
                 NETWORKING=yes
                 
                 HOSTNAME=SY-001.hadoop
+                
 
 
         * 关闭SELinux（安全策略，在安装过程中已经关闭）
