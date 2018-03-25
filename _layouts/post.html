@@ -3,15 +3,6 @@
 {% include post-head.html %}
 
 <body>
-    {% highlight ruby %}
-    def show
-    @widget = Widget(params[:id])
-    respond_to do |format|
-        format.html # show.html.erb
-        format.json { render json: @widget }
-    end
-    end
-    {% endhighlight %}
   <!--[if lt IE 10]>
 <div class="alert-danger" role="alert">都什么年代了，还用IE浏览器！！<a target="_blank" class="alert-link" href="http://www.firefox.com.cn/">换个浏览器吧</a></div>
 <![endif]-->
