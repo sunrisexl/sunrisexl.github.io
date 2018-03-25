@@ -107,7 +107,8 @@ tags: bigdata hadoop
     ```
     
     - 上传数据
-    ```shell
+    
+    ```java
     @Test
 	public void testUpload1() throws Exception{
 		//指定NameNode地址
@@ -159,8 +160,10 @@ tags: bigdata hadoop
 		IOUtils.copyBytes(in, out, 1024);
 	}
     ```
+    
     - 下载数据
-    ```shell
+    
+    ```java
     @Test
 	public void testDownload() throws Exception{
 		//指定NameNode地址
@@ -210,8 +213,10 @@ tags: bigdata hadoop
 		//使用HDFS的工具类来简化程序
 		IOUtils.copyBytes(in, out, 1024);
     ```
+    
     - 查询数据的元信息
-    ```shell
+    
+    ```java
     @Test
 	public void test1() throws Exception{
 		//获取HDFS的目录信息
@@ -261,4 +266,5 @@ tags: bigdata hadoop
 		client.close();
 	}
     ```
+    
     
