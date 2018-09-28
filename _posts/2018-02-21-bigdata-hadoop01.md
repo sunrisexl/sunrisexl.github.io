@@ -4,7 +4,7 @@ title: '一. 大数据与hadoop简介'
 subtitle: '大数据与hadoop的背景知识'
 date: 2018-02-21
 categories: 大数据
-cover: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519225753088&di=f614d63f4b6167ac7137d725af4fe02f&imgtype=0&src=http%3A%2F%2Fm.c.lnkd.licdn.com%2Fmpr%2Fmpr%2Fp%2F3%2F005%2F049%2F0bf%2F2835fc4.jpg'
+cover: 'https://githubpics.oss-cn-beijing.aliyuncs.com/bigdata/hadoop.jpg'
 tags: bigdata hadoop
 ---
 
