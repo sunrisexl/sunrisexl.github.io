@@ -36,22 +36,26 @@ tags: bigdata linux
     * linux配置
         * 关闭防火墙
             查看防火墙的状态：
-            ```
+			
+            ```shell
             systemctl status firewalld.service
             ```
 
 		    关闭防火墙： 
-		    ```
+			
+		    ```shell
 		    systemctl stop firewalld.service
 		    ```
 		    
 		    禁用防火墙（永久）
-		    ```
+			
+		    ```shell
 		    systemctl disable firewalld.service
 		    ```
 		    
         * 设置主机名 （配置文件） /etc/hosts
-            ```
+        
+            ```shell
             vi /etc/hosts
             
             192.168.203.111 SY001 SY001.hadoop
