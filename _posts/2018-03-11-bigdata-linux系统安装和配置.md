@@ -13,13 +13,13 @@ tags: bigdata linux
     * VM：12
     * 网卡：桥接模式而不是仅主机模式
     * 一共3台虚拟机：安装JDK、配置主机名、关闭防火墙
-        ```
+    
+        ```shell
         192.168.157.11 SY001.hadoop
         192.168.157.12 SY002.hadoop
         192.168.157.13 SY003.hadoop
         ```
 	    
-    
  2. 详细步骤
     * VMware安装配置redhat
         * 文件->新建虚拟机->自定义->兼容性（下一步）->稍后安装操作系统->linux Red Hat Enterprise Linux 7 64 位->虚拟机名称：SY001->下一步->网络类型：仅主机模式->……->完成
@@ -66,7 +66,8 @@ tags: bigdata linux
         * 配置SSH免密码登录
         
             主节点执行以下命令：
-            ```
+			
+            ```shell
             ssh-keygen -t rsa
             ssh-copy-id -i .ssh/id_rsa.pub root@SY002
             ssh-copy-id -i .ssh/id_rsa.pub root@SY003
@@ -75,7 +76,8 @@ tags: bigdata linux
         * 开启NTP服务（时间校准服务）
         
             (需连接外网)
-            ```
+			
+            ```shell
             yum install ntp
             systemctl is-enabled ntpd
             systemctl enabled ntpd
@@ -84,7 +86,8 @@ tags: bigdata linux
             
         * 检查DNS和NSCD
             配置全域名，所以需要检查DNS。为了减轻DNS的负担, 建议在节点里用 Name Service Caching Daemon (NSCD)
-            ```
+			
+            ```shell
             vi /etc/hosts
             192.168.203.111 SY001 SY001.hadoop
             192.168.203.112 SY002 SY002.hadoop
@@ -92,7 +95,8 @@ tags: bigdata linux
             ```
                 
             每台节点里配置FQDN，如下以主节点为例:
-            ```
+			
+            ```shell
             vi /etc/sysconfig/network
         
             NETWORKING=yes
@@ -102,7 +106,8 @@ tags: bigdata linux
 
 
         * 关闭SELinux
-            ```
+        
+            ```shell
             vi /etc/sysconfig/selinux
             SELINUX=disabled
             ```
