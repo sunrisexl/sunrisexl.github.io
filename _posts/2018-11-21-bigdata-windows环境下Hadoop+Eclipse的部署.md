@@ -121,12 +121,15 @@ hdfs namenode -format
 在eclipse中创建一个Java项目，在项目中创建一个”lib“文件夹。如图：
 ![enter description here][9]
 从Hadoop的安装目录中找到如下四个文件夹中的后缀名为".jar"的所有文件，将其复制到eclipse中的”lib”目录下。
+
 D:\ProgramFiles\hadoop\share\hadoop\common\
 D:\ProgramFiles\hadoop\share\hadoop\common\lib
 D:\ProgramFiles\hadoop\share\hadoop\hdfs
 D:\ProgramFiles\hadoop\share\hadoop\hdfs\lib
+
 （在网盘中也有提供）
-然后在“lib“目录中单击第一个jar包，按住shift，再单击最后一个jar包，将其全部选中，右键buildpath->add to buildpath.看到其变成小奶瓶的样子就导入成功了。
+
+然后在“lib“目录中单击第一个jar包，按住shift，再单击最后一个jar包，将其全部选中，右键buildpath->add to buildpath.看到变成小奶瓶的样子就导入成功了。
 ![enter description here][10]
 然后新建class文件，输入如下内容：(测试创建文件夹)
 ```java
