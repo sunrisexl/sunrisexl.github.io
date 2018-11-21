@@ -25,7 +25,8 @@ HADOOP_HOME:D:\ProgramFiles\hadoop
 1.  下载[（安装介质，提取码：w8p6）][2]中的“hadooponwindows-master.zip”文件，解压后，用文件中的“bin”文件夹替换掉本地Hadoop的安装目录“D:\ProgramFiles\hadoop”中的“bin”文件夹。
 2.  在Hadoop的安装目录“D:\ProgramFiles\hadoop\etc\hadoop”中找到如下文件，并按照提示添加内容。（在windows下推荐使用**notepad++**修改xml文件，notepad++的安装包也在网盘中提供）
 
-* ```D:\ProgramFiles\hadoop\etc\hadoop\core-site.xml```
+```D:\ProgramFiles\hadoop\etc\hadoop\core-site.xml```
+
 ```xml
 <configuration>
 <!--NameNode的地址-->
@@ -35,7 +36,9 @@ HADOOP_HOME:D:\ProgramFiles\hadoop
     </property>
 </configuration>
 ```
-* ```D:\ProgramFiles\hadoop\etc\hadoop\mapred-site.xml```
+
+```D:\ProgramFiles\hadoop\etc\hadoop\mapred-site.xml```
+
 ```xml
 <configuration>
 <!--MR程序运行的容器是Yarn-->
@@ -45,7 +48,9 @@ HADOOP_HOME:D:\ProgramFiles\hadoop
     </property>
 </configuration>
 ```
-* ```D:\ProgramFiles\hadoop\etc\hadoop\hdfs-site.xml```
+
+```D:\ProgramFiles\hadoop\etc\hadoop\hdfs-site.xml```
+
 ```xml
 <configuration>
 <!--数据块的冗余度，默认是3-->
@@ -64,7 +69,8 @@ HADOOP_HOME:D:\ProgramFiles\hadoop
 </configuration>
 ```
 
-* ```D:\ProgramFiles\hadoop\etc\hadoop\yarn-site.xml```
+```D:\ProgramFiles\hadoop\etc\hadoop\yarn-site.xml```
+
 ```xml
 <configuration>
 <!--NodeManager运行MR任务的方式-->
@@ -79,15 +85,18 @@ HADOOP_HOME:D:\ProgramFiles\hadoop
 </configuration>
 ```
 
-* ```D:\ProgramFiles\hadoop\etc\hadoop\hadoop-env.cmd```
+```D:\ProgramFiles\hadoop\etc\hadoop\hadoop-env.cmd```
 (修改为自己的JDK安装目录)
-```cmd
+```shell
 set JAVA_HOME=D:\java\jdk
 ```
+
 ## 三.格式化HDFS文件系统
+
 ```cmd
 hdfs namenode -format
 ```
+
 如下图所示内容基本就成功了。
 ![enter description here][3]
 
