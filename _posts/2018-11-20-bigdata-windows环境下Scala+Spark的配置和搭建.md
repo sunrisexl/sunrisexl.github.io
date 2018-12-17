@@ -10,7 +10,7 @@ tags: bigdata Scala Spark
 
 ### 注意事项
 * 所有的安装目录最好不要出现空格，尤其注意“Program Files”文件夹中间的空格。
-* 下文中提到的安装介质如果无法下载可以点击[此处（安装介质，提取码：w8p6）][1]进行下载。
+* 下文中提到的安装介质如果无法下载可以点击[此处（安装介质，提取码：hg01）][1]进行下载。
 
 ## 一.JDK的安装
 
@@ -74,7 +74,7 @@ D:\ProgramFiles\hadoop\bin\winutils.exe chmod 777 /tmp/hive
 如果出现报错，考虑winutlis有没有安装成功，或者有没有修改权限。
 
 
-  [1]: https://pan.baidu.com/s/1k_fURV8mb2uruBlMsKqpVw
+  [1]: https://pan.baidu.com/s/1WWqZfbE9oB4xhREzPfqUNA
   [2]: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
   [3]: https://www.scala-lang.org/download/all.html
   [4]: https://githubpics.oss-cn-beijing.aliyuncs.com/bigdata/win10SparkScala/sacla%E4%B8%8B%E8%BD%BD01.JPG
